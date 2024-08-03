@@ -5,6 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  
   const navigate = useNavigate();
 
   const onhandleSubmit = (e) => {
