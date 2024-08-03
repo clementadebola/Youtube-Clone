@@ -21,7 +21,8 @@ const VideoDetail = () => {
     // fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(
     //   (data) => setVideos(data.items)
     // );
-    fetchFromAPI(`search?part=`)
+    fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then((data) => setVideos(data.items)
+  );
 
   }, [id]);
 
